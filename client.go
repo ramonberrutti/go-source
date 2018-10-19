@@ -149,11 +149,11 @@ func (c *Client) ExecCmd(cmd *Cmd) (resp string, err error) {
 	body := cmd.String()
 
 	// Validate body is ASCII only
-	for _, r := range body {
-		if r >= 0x80 {
-			return "", ErrNonASCII
-		}
-	}
+	// for _, r := range body {
+	// 	if r >= 0x80 {
+	// 		return "", ErrNonASCII
+	// 	}
+	// }
 
 	expectedID := c.reqID
 	if err = c.write(execCommand, body); err != nil {

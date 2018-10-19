@@ -10,7 +10,7 @@ var (
 	ErrNilOption = errors.New("source: nil option")
 
 	// ErrNonASCII is returned if a command with non-ASCII characters is attempted.
-	ErrNonASCII = errors.New("source: non-ascii body")
+	// ErrNonASCII = errors.New("source: non-ascii body")
 
 	// ErrAuthFailure is returned if the client failed to authenticate.
 	ErrAuthFailure = errors.New("source: authentication failure")
